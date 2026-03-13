@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: #00306b8e;
 }
 
 .modal-content {
@@ -37,7 +38,9 @@
 .modal-content p {
   color: #666;
 }
-
+.modal-content h2{
+  color: #00316b;
+}
 .modal-button-group {
   display: flex;
   gap: 15px;
@@ -60,23 +63,23 @@
 }
 
 .modal-btn-primary {
-  background-color: #7c73f3;
+  background-color: #00316b;
   color: white;
 }
 
 .modal-btn-primary:hover {
-  background-color: #5a52d8;
+  background-color: #00316b;
 }
 
 .modal-btn-secondary {
   background-color: #eee4ff;
-  color: #7c73f3;
-  border: 2px solid #7c73f3;
+  color: #00316b;
+  border: 2px solid #00316b;
 }
 
 .modal-btn-secondary:hover {
   background-color: #dcd2ff;
-  border-color: #5a52d8;
+  border-color: #00316b;
 }
 
 /* Responsive Styles */
