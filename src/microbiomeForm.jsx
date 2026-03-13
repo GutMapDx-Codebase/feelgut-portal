@@ -866,7 +866,7 @@ const MicrobiomeForm = () => {
         styles={{
           control: (base) => ({
             ...base,
-            backgroundColor: "#eee4ff",
+            backgroundColor: "#b9d6ff",
             border: "none",
             borderRadius: "10px",
             padding: "6px 4px",
@@ -881,6 +881,21 @@ const MicrobiomeForm = () => {
           valueContainer: (base) => ({
             ...base,
             padding: "0 12px",
+          }),
+
+          singleValue: (base) => ({
+            ...base,
+            color: "#000000",
+          }),
+
+          input: (base) => ({
+            ...base,
+            color: "#000000",
+          }),
+
+          placeholder: (base) => ({
+            ...base,
+            color: "#333333",
           }),
 
           indicatorsContainer: (base) => ({
@@ -945,7 +960,7 @@ const MicrobiomeForm = () => {
                 styles={{
                   control: (base) => ({
                     ...base,
-                    backgroundColor: "#eee4ff",
+                    backgroundColor: "#b9d6ff",
                     border: "none",
                     borderRadius: "10px",
                     padding: "6px 4px",
@@ -1075,7 +1090,7 @@ const MicrobiomeForm = () => {
                       style={{
                         backgroundColor: condition.selected
                           ? "#00316b"
-                          : "#EEE4FF",
+                          : "#b9d6ff",
                         color: condition.selected ? "white" : "black",
                       }}
                     >
@@ -1117,7 +1132,7 @@ const MicrobiomeForm = () => {
                       style={{
                         backgroundColor: condition.selected
                           ? "#00316b"
-                          : "#EEE4FF",
+                          : "#b9d6ff",
                         color: condition.selected ? "white" : "black",
                       }}
                     >
@@ -1156,7 +1171,7 @@ const MicrobiomeForm = () => {
                       style={{
                         backgroundColor: condition.selected
                           ? "#00316b"
-                          : "#EEE4FF",
+                          : "#b9d6ff",
                         color: condition.selected ? "white" : "black",
                       }}
                     >
