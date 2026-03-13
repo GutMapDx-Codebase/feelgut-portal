@@ -8,7 +8,6 @@
 input[type="date"],
 .mylabel input[list="countries"] {
   background-color: #b9d6ff;
-  opacity: 0.5;
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -16,6 +15,12 @@ input[type="date"],
   color: #000000;
   appearance: none;
   -moz-appearance: none;
+}
+
+/* Date icon - black color */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: brightness(0);
+  cursor: pointer;
 }
 
 .mylabel input:focus,
@@ -88,7 +93,6 @@ input[type="date"],
   border-radius: 10px;
   border: none;
   background-color: #b9d6ff;
-  opacity: 0.5;  
   font-size: 14px;
   color: #000000;
 }
@@ -194,7 +198,6 @@ select {
   margin-bottom: 15px;
   padding-right: 30px;
   background-color: #b9d6ff;
-  opacity: 0.5;
   color: #000000;
   border-radius: 10px;
   height: 40px;
@@ -1728,6 +1731,18 @@ form.was-validated .general-health-question:has(input[type="radio"][required]):n
 }
 .select__control css-149gfla-control{
   font-size: 13px;
+}
+
+/* React-Select dropdown - hide scrollbars */
+[class*="menu-list"] {
+  overflow-x: hidden !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+[class*="menu-list"]::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 .second-row-input{
   height: 15px;

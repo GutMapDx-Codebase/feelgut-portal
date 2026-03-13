@@ -875,6 +875,7 @@ const MicrobiomeForm = () => {
             ":hover": {
               border: "none",
               boxShadow: "none",
+              backgroundColor: "#b9d6ff",
             },
           }),
 
@@ -905,10 +906,18 @@ const MicrobiomeForm = () => {
 
           menu: (base) => ({
             ...base,
-            backgroundColor: "#f7edff",
+            backgroundColor: "#b9d6ff",
             borderRadius: "8px",
             border: "none",
             boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+            overflow: "hidden",
+          }),
+
+          menuList: (base) => ({
+            ...base,
+            overflowX: "hidden",
+            overflowY: "auto",
+            paddingRight: "4px",
           }),
 
           option: (base, state) => ({
@@ -916,11 +925,11 @@ const MicrobiomeForm = () => {
             borderRadius: "6px",
             padding: "10px 12px",
             backgroundColor: state.isSelected
-              ? "#d1b3ff"
+              ? "#b9d6ff"
               : state.isFocused
-                ? "#ede0ff"
-                : "white",
-            color: "#2a004f",
+                ? "#b9d6ff"
+                : "#b9d6ff",
+            color: "#000000",
             cursor: "pointer",
             margin: "2px 4px",
           }),
