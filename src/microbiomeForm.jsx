@@ -925,11 +925,11 @@ const MicrobiomeForm = () => {
             borderRadius: "6px",
             padding: "10px 12px",
             backgroundColor: state.isSelected
-              ? "#b9d6ff"
+              ? "#00316b"
               : state.isFocused
-                ? "#b9d6ff"
+                ? "#00316b"
                 : "#b9d6ff",
-            color: "#000000",
+            color: state.isSelected || state.isFocused ? "#ffffff" : "#000000",
             cursor: "pointer",
             margin: "2px 4px",
           }),
