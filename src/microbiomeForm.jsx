@@ -373,7 +373,8 @@ const MicrobiomeForm = () => {
         .map((h) => h.value),
       dietType: dietType.filter((d) => d.selected).map((d) => d.value),
       eatingHabits: eatingHabits.filter((e) => e.selected).map((e) => e.value),
-      website:"FeelGut"
+      website:"FeelGut",
+      source:"FeelGut"
     };
     // Remove heightFeet and heightInches from payload as they're combined into height
     delete payload.heightFeet;
